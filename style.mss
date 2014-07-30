@@ -7,7 +7,10 @@
 // Eg. @water is used in the #water and #waterway layers directly, but
 // also in the #water_label and #waterway_label layers inside a color
 // manipulation function to get a darker shade of the same hue.
-@land: #f8f4f0;
+
+@maroon1: rgb(194,131,126);
+@maroon3: rgb(92,39,47);
+@land: lighten(#ffe8d2, 1%);
 @water: #a0c8f0;
 
 Map {
@@ -16,17 +19,38 @@ Map {
 
 // ---------------------------------------------------------------------
 // Political boundaries
+#admin[admin_level=2][maritime=0] {
+  opacity: 1;
+  line-width: 1.5;
+  line-join: round;
+  line-color: @maroon3;
+      [zoom>=8] { line-width: 2.5; }
+    [zoom>=12] { line-width: 4; }
+}
 
+#admin[admin_level>=3][zoom>=6] {
+  opacity: .5;
+  line-width: .5;
+  line-join: round;
+  line-color: @maroon3;
+    [zoom>=8] { line-width: 1.5; }
+    [zoom>=12] { line-width: 2; }
+}
+
+/*
 #admin {
+ 
   opacity: 0.5;
   line-join: round;
   line-color: #446;
-  [maritime=1] {
-    // downplay boundaries that are over water
-    line-color: @water;
-  }
+  
+
+  
   // Countries
   [admin_level=2] {
+    opacity: 1;
+    line-color: #446;
+    line-join: round;
     line-width: 1.4;
     line-cap: round;
     [zoom>=6] { line-width: 2; }
@@ -34,14 +58,16 @@ Map {
     [disputed=1] { line-dasharray: 4,4; }
   }
   // States / Provices / Subregions
-  [admin_level>=3] {
+  [admin_level>=3][zoom>=6] {
     line-width: 0.4;
     line-dasharray: 10,3,3,3;
     [zoom>=6] { line-width: 1; }
     [zoom>=8] { line-width: 1.5; }
     [zoom>=12] { line-width: 2; }
   }
-}
+  
+  
+}*/
 
 // ---------------------------------------------------------------------
 // Water Features 

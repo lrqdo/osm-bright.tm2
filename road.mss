@@ -18,7 +18,7 @@
 #road, #bridge, #tunnel {
   
   // casing/outlines & single lines
-  ::case[zoom>=6]['mapnik::geometry_type'=2] {
+  ::case[zoom>=8]['mapnik::geometry_type'=2] {
     [class='motorway'] {
       line-join:round;
       line-color: mix(@motorway, #800, 75);
@@ -43,7 +43,7 @@
       [zoom>=15] { line-width:5; }
       [zoom>=16] { line-width:6.5; }
     }
-    [class='main'] {
+    [class='main'][zoom>=10] {
       line-join:round;
       line-color: mix(@main, #800, 75);
       #road { line-cap: round; }
@@ -106,7 +106,7 @@
       [zoom>=15] { line-width:3; }
       [zoom>=16] { line-width:4.5; }
     }
-    [class='main'][zoom>=8] {
+    [class='main'][zoom>=10] {
       line-join:round;
       #road, #bridge { line-cap: round; }
       line-color:@main;

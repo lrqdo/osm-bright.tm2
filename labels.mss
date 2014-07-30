@@ -14,7 +14,7 @@
 // - French: '[name_fr]'
 // - Spanish: '[name_es]'
 // - German: '[name_de]'
-@name: '[name_en]';  
+@name: '[name]';  
 
 
 // ---------------------------------------------------------------------
@@ -25,10 +25,10 @@
 //are recommended as final fallbacks if you have them available. 
 //They support all the characters used in the MapBox Streets vector tiles.
 @fallback: 'Open Sans Regular';
-@sans: 'Open Sans Regular', @fallback;
-@sans_md: 'Open Sans Semibold', @fallback;
-@sans_bd: 'Open Sans Bold', @fallback;
-@sans_it: 'Open Sans Italic', @fallback;
+@sans: 'Tisa Offc Pro Regular', @fallback;
+@sans_md: 'Tisa Offc Pro Medium', @fallback;
+@sans_bd: 'Tisa Offc Pro Bold', @fallback;
+@sans_it: 'Tisa Offc Pro Italic', @fallback;
 
 
 // ---------------------------------------------------------------------
@@ -37,7 +37,7 @@
 // The country labels in MapBox Streets vector tiles are placed by hand,
 // optimizing the arrangement to fit as many as possible in densely-
 // labeled areas.
-#country_label[zoom>=3] {
+/*#country_label[zoom>=3] {
   text-name: @name;
   text-face-name: @sans_bd;
   text-transform: uppercase;
@@ -62,7 +62,7 @@
   [zoom>=7][scalerank>3] {
     text-size: 15;
   }
-}
+}*/
 
 #country_label_line {
   // Lines that connect offset labels to small
@@ -120,7 +120,7 @@
 
 // ---------------------------------------------------------------------
 // Cities, towns, villages, etc
-
+/*
 // City labels with dots for low zoom levels.
 // The separate attachment keeps the size of the XML down.
 #place_label::citydots[type='city'][zoom>=4][zoom<=7] {
@@ -128,29 +128,13 @@
   // to use shaves a bit off the final project.xml size
   [ldir='N'],[ldir='S'],[ldir='E'],[ldir='W'],
   [ldir='NE'],[ldir='SE'],[ldir='SW'],[ldir='NW'] {
-    text-name: @name;
-    text-size: 14;
-    text-face-name: @sans;
-    text-placement: point;
-    text-fill: #333;
-    text-halo-fill: fadeout(#fff, 50%);
-    text-halo-radius: 1;
-    text-halo-rasterizer: fast;
-    text-min-distance: 2;
-    [ldir='E'] { text-dx: 5; }
-    [ldir='W'] { text-dx: -5; }
-    [ldir='N'] { text-dy: -5; }
-    [ldir='S'] { text-dy: 5; }
-    [ldir='NE'] { text-dx: 4; text-dy: -4; }
-    [ldir='SE'] { text-dx: 4; text-dy: 4; }
-    [ldir='SW'] { text-dx: -4; text-dy: 4; }
-    [ldir='NW'] { text-dx: -4; text-dy: -4; }
-    marker-width: 4;
+    marker-width: 6;
     marker-fill: #333;
+    marker-opacity: .5;
   }
-}
+}*/
 
-#place_label {
+#place_label[zoom>=8] {
   text-name: @name;
   text-face-name: @sans;
   text-wrap-width: 120;
