@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE Map[]>
-<Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over" background-color="#ffebd7">
+<Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over" background-color="#ffe8d2">
 
 <Parameters>
   <Parameter name="attribution"><![CDATA[<a href='https://www.mapbox.com/about/maps/' target='_blank'>&copy; Mapbox &copy; OpenStreetMap</a> <a class='mapbox-improve-map' href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a>]]></Parameter>
   <Parameter name="bounds">-180,-85.0511,180,85.0511</Parameter>
-  <Parameter name="center">-0.5939483642578125,47.45037978769006,12</Parameter>
+  <Parameter name="center">0.0933837890625,48.45106561953216,8</Parameter>
   <Parameter name="format">png8:m=h</Parameter>
   <Parameter name="maxzoom">22</Parameter>
   <Parameter name="minzoom">0</Parameter>
@@ -29,12 +29,6 @@
   <Font face-name="Tisa Offc Pro Bold"/>
   <Font face-name="Open Sans Regular"/>
 </FontSet>
-<Style name="landuse-overlay" filter-mode="first" opacity="0.1">
-  <Rule>
-    <Filter>([class] = 'wood')</Filter>
-    <PolygonSymbolizer fill="#66aa44" gamma="0.5" />
-  </Rule>
-</Style>
 <Style name="landuse" filter-mode="first">
   <Rule>
     <Filter>([class] = 'school')</Filter>
@@ -52,11 +46,14 @@
     <Filter>([class] = 'park')</Filter>
     <PolygonSymbolizer fill="#d8e8c8" />
   </Rule>
+  <Rule>
+    <Filter>([class] = 'wood')</Filter>
+    <PolygonSymbolizer fill="#d8e8c8" />
+  </Rule>
 </Style>
 <Layer name="landuse"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
-    <StyleName>landuse</StyleName>
-    <StyleName>landuse-overlay</StyleName>  </Layer>
+    <StyleName>landuse</StyleName>  </Layer>
 
 <Style name="waterway" filter-mode="first">
   <Rule>
