@@ -10,16 +10,25 @@
 
 @maroon1: rgb(194,131,126);
 @maroon3: rgb(92,39,47);
-@land: lighten(#ffe8d2, 1%);
-@water: #a0c8f0;
+@land: #FFF9E4;
+@water: #BEEFF8 ;
 
 Map {
-  background-color:#ffe8d2;
+  background-color: @land;
 }
 
 // ---------------------------------------------------------------------
 // Political boundaries
-#admin[admin_level=2][maritime=0] {
+#admin[admin_level=2][maritime=0]
+[osm_id!= 210347008] 
+[osm_id!= 210347006]
+[osm_id!= 224452841]
+[osm_id!=171276812 ]
+[osm_id!=171276814 ]
+[osm_id!=171276811 ]
+[osm_id!=62043868 ]
+[osm_id!=91454145 ]
+{
   opacity: 1;
   line-width: 1.5;
   line-join: round;
@@ -76,7 +85,7 @@ Map {
   polygon-fill: @water - #111;
   // Map tiles are 256 pixels by 256 pixels wide, so the height 
   // and width of tiling pattern images must be factors of 256. 
-  polygon-pattern-file: url(pattern/wave.png);
+  //polygon-pattern-file: url(pattern/wave.png);
   [zoom<=5] {
     // Below zoom level 5 we use Natural Earth data for water,
     // which has more obvious seams that need to be hidden.
@@ -89,7 +98,7 @@ Map {
     // southern edge of any water body.
     polygon-fill: #f0f0ff;
     comp-op: soft-light;
-    image-filters: agg-stack-blur(1,1);
+    image-filters: agg-stack-blur(10,10);
     polygon-geometry-transform: translate(0,1);
     polygon-clip: false;
   }
@@ -120,7 +129,7 @@ Map {
   // OpenStreetMap, so this layer includes both. The 'class' field
   // is a highly opinionated simplification of the myriad LULC
   // tag combinations into a limited set of general classes.
-  [class='park'],[class='wood'] { polygon-fill: #d8e8c8; }
+  [class='park'][class!='wood'][zoom>=10] { polygon-fill: #d8e8c8; }
   [class='cemetery'] { polygon-fill: mix(#d8e8c8, #ddd, 25%); }
   [class='hospital'] { polygon-fill: #fde; }
   [class='school'] { polygon-fill: #f0e8f8; }
@@ -176,4 +185,6 @@ Map {
     }  
   }
 }
+
+
 

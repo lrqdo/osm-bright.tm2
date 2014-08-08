@@ -24,10 +24,10 @@
 // as possible. 'Arial Unicode MS Regular' and 'Arial Unicode MS Bold' 
 //are recommended as final fallbacks if you have them available. 
 //They support all the characters used in the MapBox Streets vector tiles.
-@fallback: 'Open Sans Regular';
-@sans: 'Tisa Offc Pro Regular', @fallback;
-@sans_md: 'Tisa Offc Pro Medium', @fallback;
-@sans_bd: 'Tisa Offc Pro Bold', @fallback;
+@fallback: 'Source Sans Pro Regular';
+@sans: 'Source Sans Pro Regular', @fallback;
+@sans_md: 'Source Sans Pro Semibold', @fallback;
+@sans_bd: 'Source Sans Pro Bold', @fallback;
 @sans_it: 'Tisa Offc Pro Italic', @fallback;
 
 
@@ -135,13 +135,14 @@
 }*/
 
 #place_label[zoom>=8] {
+  text-character-spacing: 2.5;
   text-name: @name;
   text-face-name: @sans;
   text-wrap-width: 120;
   text-wrap-before: true;
   text-fill: #333;
-  text-halo-fill: fadeout(#fff, 50%);
-  text-halo-radius: 1;
+  text-halo-fill: fadeout(@land, 50%);
+  text-halo-radius: 3;
   text-halo-rasterizer: fast;
   text-size: 10;
   [type='city'][zoom>=8][zoom<=15] {
