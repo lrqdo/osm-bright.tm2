@@ -140,7 +140,7 @@
   text-face-name: @sans;
   text-wrap-width: 120;
   text-wrap-before: true;
-  text-fill: #333;
+  text-fill: @maroon3;
   text-halo-fill: fadeout(@land, 50%);
   text-halo-radius: 2.5;
   text-halo-rasterizer: fast;
@@ -176,7 +176,7 @@
   [type='hamlet'],
   [type='suburb'],
   [type='neighbourhood'] {
-    text-fill: #633;
+    text-fill: @maroon1;
     text-face-name:	@sans_bd;
     text-transform: uppercase;
     text-character-spacing: 0.5;

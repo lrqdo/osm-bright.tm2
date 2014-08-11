@@ -1,7 +1,7 @@
 // Basic color palette, from which variations will be derived.
 @motorway:          #fc8;
 @main:              #fea;
-@street:            #fff;
+@street:            #fea  ;
 @street_limited:    #f3f3f3;
 
 // ---------------------------------------------------------------------
@@ -16,7 +16,7 @@
 // attachments. The 'case' attachment is 
 
 #road, #bridge, #tunnel {
-  
+  /*
   // casing/outlines & single lines
   ::case[zoom>=8]['mapnik::geometry_type'=2] {
     [class='motorway'] {
@@ -82,7 +82,7 @@
       [zoom>=16] { line-width: 1.2; }
       [zoom>=17] { line-width: 1.5; }
     }
-  }
+  }*/
   
   // fill/inlines
   ::fill[zoom>=6]['mapnik::geometry_type'=2] {
@@ -91,12 +91,12 @@
       #road, #bridge { line-cap:round; }
       line-color:@motorway;
       #tunnel { line-color:lighten(@motorway,4); }
-      [zoom>=8] { line-width:0.5; }
-      [zoom>=10] { line-width:1; }
-      [zoom>=13] { line-width:2; }
-      [zoom>=14] { line-width:3.5; }
-      [zoom>=15] { line-width:5; }
-      [zoom>=16] { line-width:7; }
+      [zoom>=8] { line-width:1.5; }
+      [zoom>=10] { line-width:3; }
+      [zoom>=13] { line-width:4; }
+      [zoom>=14] { line-width:5; }
+      [zoom>=15] { line-width:7; }
+      [zoom>=16] { line-width:10; }
     }
     [class='motorway_link'][zoom>=14] {
       line-join:round;
@@ -112,17 +112,17 @@
       #road, #bridge { line-cap: round; }
       line-color:@main;
       #tunnel { line-color:lighten(@main,4); }
-      [zoom>=8] { line-width:0.5; }
-      [zoom>=10] { line-width:1; }
-      [zoom>=13] { line-width:1.5; }
-      [zoom>=14] { line-width:2.5; }
-      [zoom>=15] { line-width:3.5; }
+      [zoom>=10] { line-width:1.5; }
+      [zoom>=12] { line-width:2; }
+      [zoom>=13] { line-width:3; }
+      [zoom>=14] { line-width:4; }
+      [zoom>=15] { line-width:5; }
       [zoom>=16] { line-width:6; }
     }
     [class='street'][zoom>=15], {
       line-join:round;
       #road, #bridge { line-cap: round; }
-      [zoom>=15] { line-width:2.5; line-color:#fff; }
+      [zoom>=15] { line-width:2.5; line-color:@street; }
       [zoom>=16] { line-width:4; }
     }
     [class='street_limited'][zoom>=15], {
