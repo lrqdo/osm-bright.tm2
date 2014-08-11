@@ -10,7 +10,7 @@
 
 @maroon1: rgb(194,131,126);
 @maroon3: rgb(92,39,47);
-@land: #FFF9E4;
+@land: #ffffff;
 @water: #BEEFF8 ;
 
 Map {
@@ -28,8 +28,47 @@ Map {
 [osm_id!=171276811 ]
 [osm_id!=62043868 ]
 [osm_id!=91454145 ]
+[osm_id!=62043846 ]
+[osm_id!=121758376 ]
+[osm_id!=121758379 ]
+[osm_id!=121758378 ]
+[osm_id!=62043869 ]
+[osm_id!=147135317 ]
+[osm_id!=56716725 ]
+[osm_id!=99321199 ]
+[osm_id!= 4543112 ]
+[osm_id!=171146740 ]
+[osm_id!=170393704 ]
+[osm_id!=170395404 ]
+[osm_id!=35881034 ]
+[osm_id!=232710933 ]
+[osm_id!=232710932 ]
+[osm_id!=232710938 ]
+[osm_id!=232710930 ]
+[osm_id!=232710926 ]
+[osm_id!=4537335 ]
+[osm_id!=4537349 ]
+[osm_id!=219322830 ]
+[osm_id!=219135746 ]
+[osm_id!=210268275 ]
+[osm_id!=210303898 ]
+[osm_id!=210268274 ]
+[osm_id!=210345464 ]
+[osm_id!=210348041 ]
+[osm_id!=210351410 ]
+[osm_id!=210355109 ]
+[osm_id!=210570699 ]
+[osm_id!=210355109 ]
+[osm_id!=210570715 ]
+[osm_id!=230466889 ]
+[osm_id!=230466886 ]
+[osm_id!=230466789 ]
+[osm_id!=230466882 ]
+[osm_id!=230466861 ]
+[osm_id!=230466888 ]
+
 {
-  opacity: 1;
+  opacity: .5;
   line-width: 1.5;
   line-join: round;
   line-color: @maroon3;
@@ -38,7 +77,7 @@ Map {
 }
 
 #admin[admin_level>=3][zoom>=6] {
-  opacity: .5;
+  opacity: .3;
   line-width: .5;
   line-join: round;
   line-color: @maroon3;

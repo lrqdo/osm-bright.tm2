@@ -135,19 +135,19 @@
 }*/
 
 #place_label[zoom>=8] {
-  text-character-spacing: 2.5;
+  text-character-spacing: 2.1;
   text-name: @name;
   text-face-name: @sans;
   text-wrap-width: 120;
   text-wrap-before: true;
   text-fill: #333;
   text-halo-fill: fadeout(@land, 50%);
-  text-halo-radius: 3;
+  text-halo-radius: 2.5;
   text-halo-rasterizer: fast;
-  text-size: 10;
   [type='city'][zoom>=8][zoom<=15] {
   	text-face-name: @sans_md;
-    text-size: 16;
+    text-transform: uppercase;
+    text-size: 13;
     [zoom>=10] { 
       text-size: 18;
       text-wrap-width: 140;
@@ -160,7 +160,7 @@
     [zoom>=16] { text-name: "''"; }
   }
   [type='town'] {
-    text-size: 14;
+    text-size: 12;
     [zoom>=12] { text-size: 16; }
     [zoom>=14] { text-size: 20; }
     [zoom>=16] { text-size: 24; }

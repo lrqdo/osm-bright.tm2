@@ -20,6 +20,7 @@
   // casing/outlines & single lines
   ::case[zoom>=8]['mapnik::geometry_type'=2] {
     [class='motorway'] {
+      opacity: .5;
       line-join:round;
       line-color: mix(@motorway, #800, 75);
       #road { line-cap: round; }
