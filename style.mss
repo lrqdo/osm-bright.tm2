@@ -177,7 +177,7 @@ Map {
   // is a highly opinionated simplification of the myriad LULC
   // tag combinations into a limited set of general classes.
   [class='park'][zoom>=12] { polygon-fill: @green1; }
-  [class='wood'][zoom>=12] { polygon-fill: mix(@bgLight, @green1, 50%); }
+  [class='wood'][zoom>=12] { polygon-fill: mix(@bgLight, @green1, 30%); }
   [class='cemetery'] { polygon-fill: mix(#d8e8c8, #ddd, 25%); }
   [class='hospital'][zoom>=14]  { polygon-fill: #fde; }
   [class='school'][zoom>=14]  { polygon-fill: #f0e8f8; }

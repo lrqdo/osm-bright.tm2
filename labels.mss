@@ -28,7 +28,8 @@
 @sans: 'Source Sans Pro Regular', @fallback;
 @sans_md: 'Source Sans Pro Semibold', @fallback;
 @sans_bd: 'Source Sans Pro Bold', @fallback;
-@sans_it: 'Tisa Offc Pro Italic', @fallback;
+@sans_it: 'Source Sans Pro Italic', @fallback;
+
 
 
 // ---------------------------------------------------------------------
@@ -203,14 +204,14 @@
     // can use that in our url expression.
     // Not all POIs have a Maki icon assigned, so we limit this section
     // to those that do. See also <https://www.mapbox.com/maki/>
-    marker-fill:#666;
+    marker-fill:@maroon2;
     marker-file:url('icon/[maki]-12.svg');
   }
   ::label {
     text-name: @name;
-    text-face-name: @sans_md;
+    text-face-name: @sans_it;
     text-size: 12;
-    text-fill: #666;
+    text-fill: @maroon2;
     text-halo-fill: fadeout(#fff, 50%);
     text-halo-radius: 1;
     text-halo-rasterizer: fast;
