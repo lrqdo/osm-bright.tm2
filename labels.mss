@@ -140,7 +140,7 @@
   text-face-name: @sans;
   text-wrap-width: 120;
   text-wrap-before: true;
-  text-fill: @maroon3;
+  text-fill: @maroon2;
   text-halo-fill: fadeout(@land, 50%);
   text-halo-radius: 2.5;
   text-halo-rasterizer: fast;
@@ -251,7 +251,7 @@
   text-name: [name];
   text-placement: line;  // text follows line path
   text-face-name: @sans;
-  text-fill: #765;
+  text-fill: @maroon1;
   text-halo-fill: fadeout(#fff, 50%);
   text-halo-radius: 1;
   text-halo-rasterizer: fast;

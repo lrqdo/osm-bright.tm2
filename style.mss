@@ -10,8 +10,13 @@
 
 @maroon1: rgb(194,131,126);
 @maroon3: rgb(92,39,47);
-@land: #ffffff;
-@water: #BEEFF8 ;
+@maroon2: rgb(137,84,83);
+@bgLight: rgb(255,232,210);
+@green1        : #C4D9A5;
+@green: #75FF7D;
+
+@land: mix(#fff, @bgLight, 50%);
+@water: #47B3FF ;
 
 Map {
   background-color: @land;
@@ -19,6 +24,8 @@ Map {
 
 // ---------------------------------------------------------------------
 // Political boundaries
+//some french coasts being marked as boundaries/admin_level=2, 
+//we need to exclude them manually
 #admin[admin_level=2][maritime=0]
 [osm_id!= 210347008] 
 [osm_id!= 210347006]
@@ -66,12 +73,11 @@ Map {
 [osm_id!=230466882 ]
 [osm_id!=230466861 ]
 [osm_id!=230466888 ]
-
 {
   opacity: .5;
   line-width: 1.5;
   line-join: round;
-  line-color: @maroon3;
+  line-color: @maroon2;
       [zoom>=8] { line-width: 2.5; }
     [zoom>=12] { line-width: 4; }
 }
@@ -80,7 +86,7 @@ Map {
   opacity: .3;
   line-width: .5;
   line-join: round;
-  line-color: @maroon3;
+  line-color: @maroon2;
     [zoom>=8] { line-width: 1.5; }
     [zoom>=12] { line-width: 2; }
 }
@@ -144,10 +150,12 @@ Map {
 }
 
 #waterway {
-  line-color: @water * 0.9;
+  line-color: @water;
   line-cap: round;
   line-width: 0.5;
   [type='river'] {
+    line-width: .3;
+    [zoom>=12] { line-width: .6; }
     [zoom>=12] { line-width: 1; }
     [zoom>=14] { line-width: 2; }
     [zoom>=16] { line-width: 3; }
@@ -168,10 +176,11 @@ Map {
   // OpenStreetMap, so this layer includes both. The 'class' field
   // is a highly opinionated simplification of the myriad LULC
   // tag combinations into a limited set of general classes.
-  [class='park'][class!='wood'][zoom>=10] { polygon-fill: #d8e8c8; }
+  [class='park'][zoom>=12] { polygon-fill: @green1; }
+  [class='wood'][zoom>=12] { polygon-fill: mix(@bgLight, @green1, 50%); }
   [class='cemetery'] { polygon-fill: mix(#d8e8c8, #ddd, 25%); }
-  [class='hospital'] { polygon-fill: #fde; }
-  [class='school'] { polygon-fill: #f0e8f8; }
+  [class='hospital'][zoom>=14]  { polygon-fill: #fde; }
+  [class='school'][zoom>=14]  { polygon-fill: #f0e8f8; }
 
   /*
   ::overlay {

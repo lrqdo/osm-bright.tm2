@@ -1,7 +1,7 @@
 // Basic color palette, from which variations will be derived.
 @motorway:          #fc8;
-@main:              #fea;
-@street:            #fea  ;
+@main:              #fff;
+@street:            #fff  ;
 @street_limited:    #f3f3f3;
 
 // ---------------------------------------------------------------------
