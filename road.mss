@@ -1,8 +1,8 @@
 // Basic color palette, from which variations will be derived.
-@motorway:          #fc8;
-@main:              #fff;
-@street:            #fff  ;
-@street_limited:    #f3f3f3;
+@motorway:          #ffc088;
+@main:              #ffd788 ;
+@street:            #ffe9ac  ;
+@street_limited:    #fff;
 
 // ---------------------------------------------------------------------
 
@@ -112,17 +112,16 @@
       #road, #bridge { line-cap: round; }
       line-color:@main;
       #tunnel { line-color:lighten(@main,4); }
-      [zoom>=10] { line-width:1.5; }
-      [zoom>=12] { line-width:2; }
-      [zoom>=13] { line-width:3; }
-      [zoom>=14] { line-width:4; }
-      [zoom>=15] { line-width:5; }
-      [zoom>=16] { line-width:6; }
+      [zoom>=10] { line-width:.5; }
+      [zoom>=11] { line-width:1; }
+      [zoom>=14] { line-width:2; }
+      [zoom>=15] { line-width:3; }
+      [zoom>=16] { line-width:4; }
     }
     [class='street'][zoom>=15], {
       line-join:round;
       #road, #bridge { line-cap: round; }
-      [zoom>=15] { line-width:2.5; line-color:@street; }
+      [zoom>=15] { line-width:2; line-color:@street; }
       [zoom>=16] { line-width:4; }
     }
     [class='street_limited'][zoom>=15], {

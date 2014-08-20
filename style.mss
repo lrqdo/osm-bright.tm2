@@ -12,7 +12,7 @@
 @maroon3: rgb(92,39,47);
 @maroon2: rgb(137,84,83);
 @bgLight: rgb(255,232,210);
-@green1        : #C4D9A5;
+@green1: #C4D9A5;
 @green: #75FF7D;
 
 @land: mix(#fff, @bgLight, 50%);
@@ -152,10 +152,10 @@ Map {
 #waterway {
   line-color: @water;
   line-cap: round;
-  line-width: 0.5;
+  line-width: 0;
   [type='river'] {
-    line-width: .3;
-    [zoom>=12] { line-width: .6; }
+    line-width: 0;
+    [zoom>=9] { line-width: .6; }
     [zoom>=12] { line-width: 1; }
     [zoom>=14] { line-width: 2; }
     [zoom>=16] { line-width: 3; }

@@ -150,21 +150,21 @@
     text-transform: uppercase;
     text-size: 13;
     [zoom>=10] { 
-      text-size: 18;
+      text-size: 15;
       text-wrap-width: 140;
     }
     [zoom>=12] { 
-      text-size: 24;
+      text-size: 20;
       text-wrap-width: 180;
     }
     // Hide at largest scales:
     [zoom>=16] { text-name: "''"; }
   }
   [type='town'] {
-    text-size: 12;
-    [zoom>=12] { text-size: 16; }
-    [zoom>=14] { text-size: 20; }
-    [zoom>=16] { text-size: 24; }
+    text-size: 13;
+    [zoom>=12] { text-size: 14; }
+    [zoom>=14] { text-size: 18; }
+    [zoom>=16] { text-size: 22; }
     // Hide at largest scales:
     [zoom>=18] { text-name: "''"; }
   }
@@ -257,6 +257,7 @@
   text-halo-radius: 1;
   text-halo-rasterizer: fast;
   text-size: 12;
+  [zoom<15][class='street'] { text-size: 0; }
   [zoom>=15] { text-size: 13; }
 }
 

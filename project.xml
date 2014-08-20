@@ -5,7 +5,7 @@
 <Parameters>
   <Parameter name="attribution"><![CDATA[<a href='https://www.mapbox.com/about/maps/' target='_blank'>&copy; Mapbox &copy; OpenStreetMap</a> <a class='mapbox-improve-map' href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a>]]></Parameter>
   <Parameter name="bounds">-180,-85.0511,180,85.0511</Parameter>
-  <Parameter name="center">2.2381210327148438,48.85933639194887,16</Parameter>
+  <Parameter name="center">2.373218536376953,48.87984450217651,14</Parameter>
   <Parameter name="format">png8:m=h</Parameter>
   <Parameter name="maxzoom">22</Parameter>
   <Parameter name="minzoom">0</Parameter>
@@ -80,7 +80,7 @@
   <Rule>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([type] = 'canal')</Filter>
-    <LineSymbolizer stroke="#47b3ff" stroke-linecap="round" stroke-width="0.5" />
+    <LineSymbolizer stroke="#47b3ff" stroke-linecap="round" stroke-width="0" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
@@ -102,7 +102,7 @@
   <Rule>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([type] = 'stream')</Filter>
-    <LineSymbolizer stroke="#47b3ff" stroke-linecap="round" stroke-width="0.5" />
+    <LineSymbolizer stroke="#47b3ff" stroke-linecap="round" stroke-width="0" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
@@ -122,12 +122,18 @@
     <LineSymbolizer stroke-width="1" stroke="#47b3ff" stroke-linecap="round" />
   </Rule>
   <Rule>
+    <MaxScaleDenominator>1500000</MaxScaleDenominator>
     <MinScaleDenominator>200000</MinScaleDenominator>
     <Filter>([type] = 'river')</Filter>
-    <LineSymbolizer stroke-width="0.3" stroke="#47b3ff" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="0.6" stroke="#47b3ff" stroke-linecap="round" />
   </Rule>
   <Rule>
-    <LineSymbolizer stroke="#47b3ff" stroke-linecap="round" stroke-width="0.5" />
+    <MinScaleDenominator>1500000</MinScaleDenominator>
+    <Filter>([type] = 'river')</Filter>
+    <LineSymbolizer stroke-width="0" stroke="#47b3ff" stroke-linecap="round" />
+  </Rule>
+  <Rule>
+    <LineSymbolizer stroke="#47b3ff" stroke-linecap="round" stroke-width="0" />
   </Rule>
 </Style>
 <Layer name="waterway"
@@ -207,89 +213,83 @@
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([class] = 'main')</Filter>
-    <LineSymbolizer stroke="#ffffff" stroke-width="6" stroke-linejoin="round" />
+    <LineSymbolizer stroke="#ffde9c" stroke-width="4" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([class] = 'main')</Filter>
-    <LineSymbolizer stroke="#ffffff" stroke-width="5" stroke-linejoin="round" />
+    <LineSymbolizer stroke="#ffde9c" stroke-width="3" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([class] = 'main')</Filter>
-    <LineSymbolizer stroke="#ffffff" stroke-width="4" stroke-linejoin="round" />
+    <LineSymbolizer stroke="#ffde9c" stroke-width="2" stroke-linejoin="round" />
   </Rule>
   <Rule>
-    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([class] = 'main')</Filter>
-    <LineSymbolizer stroke="#ffffff" stroke-width="3" stroke-linejoin="round" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>200000</MaxScaleDenominator>
-    <MinScaleDenominator>100000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'main')</Filter>
-    <LineSymbolizer stroke="#ffffff" stroke-width="2" stroke-linejoin="round" />
+    <LineSymbolizer stroke="#ffde9c" stroke-width="1" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <MinScaleDenominator>200000</MinScaleDenominator>
+    <MinScaleDenominator>400000</MinScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([class] = 'main')</Filter>
-    <LineSymbolizer stroke="#ffffff" stroke-width="1.5" stroke-linejoin="round" />
+    <LineSymbolizer stroke="#ffde9c" stroke-width="0.5" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway_link')</Filter>
-    <LineSymbolizer stroke="#ffd59c" stroke-width="4.5" stroke-linejoin="round" />
+    <LineSymbolizer stroke="#ffcb9c" stroke-width="4.5" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway_link')</Filter>
-    <LineSymbolizer stroke="#ffd59c" stroke-width="3" stroke-linejoin="round" />
+    <LineSymbolizer stroke="#ffcb9c" stroke-width="3" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway_link')</Filter>
-    <LineSymbolizer stroke="#ffd59c" stroke-width="1.5" stroke-linejoin="round" />
+    <LineSymbolizer stroke="#ffcb9c" stroke-width="1.5" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
-    <LineSymbolizer stroke="#ffd59c" stroke-width="10" stroke-linejoin="round" />
+    <LineSymbolizer stroke="#ffcb9c" stroke-width="10" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
-    <LineSymbolizer stroke="#ffd59c" stroke-width="7" stroke-linejoin="round" />
+    <LineSymbolizer stroke="#ffcb9c" stroke-width="7" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
-    <LineSymbolizer stroke="#ffd59c" stroke-width="5" stroke-linejoin="round" />
+    <LineSymbolizer stroke="#ffcb9c" stroke-width="5" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
-    <LineSymbolizer stroke="#ffd59c" stroke-width="4" stroke-linejoin="round" />
+    <LineSymbolizer stroke="#ffcb9c" stroke-width="4" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
-    <LineSymbolizer stroke="#ffd59c" stroke-width="3" stroke-linejoin="round" />
+    <LineSymbolizer stroke="#ffcb9c" stroke-width="3" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>3000000</MaxScaleDenominator>
     <MinScaleDenominator>750000</MinScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
-    <LineSymbolizer stroke="#ffd59c" stroke-width="1.5" stroke-linejoin="round" />
+    <LineSymbolizer stroke="#ffcb9c" stroke-width="1.5" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
@@ -310,13 +310,13 @@
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([class] = 'street')</Filter>
-    <LineSymbolizer stroke-width="4" stroke="#ffffff" stroke-linejoin="round" />
+    <LineSymbolizer stroke-width="4" stroke="#ffe9ac" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([class] = 'street')</Filter>
-    <LineSymbolizer stroke-width="2.5" stroke="#ffffff" stroke-linejoin="round" />
+    <LineSymbolizer stroke-width="2" stroke="#ffe9ac" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
@@ -355,100 +355,94 @@
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([class] = 'street')</Filter>
-    <LineSymbolizer stroke-linecap="round" stroke-width="4" stroke="#ffffff" stroke-linejoin="round" />
+    <LineSymbolizer stroke-linecap="round" stroke-width="4" stroke="#ffe9ac" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([class] = 'street')</Filter>
-    <LineSymbolizer stroke-linecap="round" stroke-width="2.5" stroke="#ffffff" stroke-linejoin="round" />
+    <LineSymbolizer stroke-linecap="round" stroke-width="2" stroke="#ffe9ac" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([class] = 'main')</Filter>
-    <LineSymbolizer stroke-linecap="round" stroke-width="6" stroke-linejoin="round" stroke="#ffffff" />
+    <LineSymbolizer stroke-linecap="round" stroke-width="4" stroke-linejoin="round" stroke="#ffd788" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([class] = 'main')</Filter>
-    <LineSymbolizer stroke-linecap="round" stroke-width="5" stroke-linejoin="round" stroke="#ffffff" />
+    <LineSymbolizer stroke-linecap="round" stroke-width="3" stroke-linejoin="round" stroke="#ffd788" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([class] = 'main')</Filter>
-    <LineSymbolizer stroke-linecap="round" stroke-width="4" stroke-linejoin="round" stroke="#ffffff" />
+    <LineSymbolizer stroke-linecap="round" stroke-width="2" stroke-linejoin="round" stroke="#ffd788" />
   </Rule>
   <Rule>
-    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([class] = 'main')</Filter>
-    <LineSymbolizer stroke-linecap="round" stroke-width="3" stroke-linejoin="round" stroke="#ffffff" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>200000</MaxScaleDenominator>
-    <MinScaleDenominator>100000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'main')</Filter>
-    <LineSymbolizer stroke-linecap="round" stroke-width="2" stroke-linejoin="round" stroke="#ffffff" />
+    <LineSymbolizer stroke-linecap="round" stroke-width="1" stroke-linejoin="round" stroke="#ffd788" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <MinScaleDenominator>200000</MinScaleDenominator>
+    <MinScaleDenominator>400000</MinScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([class] = 'main')</Filter>
-    <LineSymbolizer stroke-linecap="round" stroke-width="1.5" stroke-linejoin="round" stroke="#ffffff" />
+    <LineSymbolizer stroke-linecap="round" stroke-width="0.5" stroke-linejoin="round" stroke="#ffd788" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway_link')</Filter>
-    <LineSymbolizer stroke-linecap="round" stroke-width="4.5" stroke-linejoin="round" stroke="#ffcc88" />
+    <LineSymbolizer stroke-linecap="round" stroke-width="4.5" stroke-linejoin="round" stroke="#ffc088" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway_link')</Filter>
-    <LineSymbolizer stroke-linecap="round" stroke-width="3" stroke-linejoin="round" stroke="#ffcc88" />
+    <LineSymbolizer stroke-linecap="round" stroke-width="3" stroke-linejoin="round" stroke="#ffc088" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway_link')</Filter>
-    <LineSymbolizer stroke-linecap="round" stroke-width="1.5" stroke-linejoin="round" stroke="#ffcc88" />
+    <LineSymbolizer stroke-linecap="round" stroke-width="1.5" stroke-linejoin="round" stroke="#ffc088" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
-    <LineSymbolizer stroke-linecap="round" stroke-width="10" stroke-linejoin="round" stroke="#ffcc88" />
+    <LineSymbolizer stroke-linecap="round" stroke-width="10" stroke-linejoin="round" stroke="#ffc088" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
-    <LineSymbolizer stroke-linecap="round" stroke-width="7" stroke-linejoin="round" stroke="#ffcc88" />
+    <LineSymbolizer stroke-linecap="round" stroke-width="7" stroke-linejoin="round" stroke="#ffc088" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
-    <LineSymbolizer stroke-linecap="round" stroke-width="5" stroke-linejoin="round" stroke="#ffcc88" />
+    <LineSymbolizer stroke-linecap="round" stroke-width="5" stroke-linejoin="round" stroke="#ffc088" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
-    <LineSymbolizer stroke-linecap="round" stroke-width="4" stroke-linejoin="round" stroke="#ffcc88" />
+    <LineSymbolizer stroke-linecap="round" stroke-width="4" stroke-linejoin="round" stroke="#ffc088" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
-    <LineSymbolizer stroke-linecap="round" stroke-width="3" stroke-linejoin="round" stroke="#ffcc88" />
+    <LineSymbolizer stroke-linecap="round" stroke-width="3" stroke-linejoin="round" stroke="#ffc088" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>3000000</MaxScaleDenominator>
     <MinScaleDenominator>750000</MinScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
-    <LineSymbolizer stroke-linecap="round" stroke-width="1.5" stroke-linejoin="round" stroke="#ffcc88" />
+    <LineSymbolizer stroke-linecap="round" stroke-width="1.5" stroke-linejoin="round" stroke="#ffc088" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
@@ -487,100 +481,94 @@
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([class] = 'street')</Filter>
-    <LineSymbolizer stroke-linecap="round" stroke-width="4" stroke="#ffffff" stroke-linejoin="round" />
+    <LineSymbolizer stroke-linecap="round" stroke-width="4" stroke="#ffe9ac" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([class] = 'street')</Filter>
-    <LineSymbolizer stroke-linecap="round" stroke-width="2.5" stroke="#ffffff" stroke-linejoin="round" />
+    <LineSymbolizer stroke-linecap="round" stroke-width="2" stroke="#ffe9ac" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([class] = 'main')</Filter>
-    <LineSymbolizer stroke-linecap="round" stroke-width="6" stroke-linejoin="round" stroke="#ffffff" />
+    <LineSymbolizer stroke-linecap="round" stroke-width="4" stroke-linejoin="round" stroke="#ffd788" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([class] = 'main')</Filter>
-    <LineSymbolizer stroke-linecap="round" stroke-width="5" stroke-linejoin="round" stroke="#ffffff" />
+    <LineSymbolizer stroke-linecap="round" stroke-width="3" stroke-linejoin="round" stroke="#ffd788" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([class] = 'main')</Filter>
-    <LineSymbolizer stroke-linecap="round" stroke-width="4" stroke-linejoin="round" stroke="#ffffff" />
+    <LineSymbolizer stroke-linecap="round" stroke-width="2" stroke-linejoin="round" stroke="#ffd788" />
   </Rule>
   <Rule>
-    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([class] = 'main')</Filter>
-    <LineSymbolizer stroke-linecap="round" stroke-width="3" stroke-linejoin="round" stroke="#ffffff" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>200000</MaxScaleDenominator>
-    <MinScaleDenominator>100000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'main')</Filter>
-    <LineSymbolizer stroke-linecap="round" stroke-width="2" stroke-linejoin="round" stroke="#ffffff" />
+    <LineSymbolizer stroke-linecap="round" stroke-width="1" stroke-linejoin="round" stroke="#ffd788" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <MinScaleDenominator>200000</MinScaleDenominator>
+    <MinScaleDenominator>400000</MinScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([class] = 'main')</Filter>
-    <LineSymbolizer stroke-linecap="round" stroke-width="1.5" stroke-linejoin="round" stroke="#ffffff" />
+    <LineSymbolizer stroke-linecap="round" stroke-width="0.5" stroke-linejoin="round" stroke="#ffd788" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway_link')</Filter>
-    <LineSymbolizer stroke-linecap="round" stroke-width="4.5" stroke-linejoin="round" stroke="#ffcc88" />
+    <LineSymbolizer stroke-linecap="round" stroke-width="4.5" stroke-linejoin="round" stroke="#ffc088" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway_link')</Filter>
-    <LineSymbolizer stroke-linecap="round" stroke-width="3" stroke-linejoin="round" stroke="#ffcc88" />
+    <LineSymbolizer stroke-linecap="round" stroke-width="3" stroke-linejoin="round" stroke="#ffc088" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway_link')</Filter>
-    <LineSymbolizer stroke-linecap="round" stroke-width="1.5" stroke-linejoin="round" stroke="#ffcc88" />
+    <LineSymbolizer stroke-linecap="round" stroke-width="1.5" stroke-linejoin="round" stroke="#ffc088" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
-    <LineSymbolizer stroke-linecap="round" stroke-width="10" stroke-linejoin="round" stroke="#ffcc88" />
+    <LineSymbolizer stroke-linecap="round" stroke-width="10" stroke-linejoin="round" stroke="#ffc088" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
-    <LineSymbolizer stroke-linecap="round" stroke-width="7" stroke-linejoin="round" stroke="#ffcc88" />
+    <LineSymbolizer stroke-linecap="round" stroke-width="7" stroke-linejoin="round" stroke="#ffc088" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
-    <LineSymbolizer stroke-linecap="round" stroke-width="5" stroke-linejoin="round" stroke="#ffcc88" />
+    <LineSymbolizer stroke-linecap="round" stroke-width="5" stroke-linejoin="round" stroke="#ffc088" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
-    <LineSymbolizer stroke-linecap="round" stroke-width="4" stroke-linejoin="round" stroke="#ffcc88" />
+    <LineSymbolizer stroke-linecap="round" stroke-width="4" stroke-linejoin="round" stroke="#ffc088" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
-    <LineSymbolizer stroke-linecap="round" stroke-width="3" stroke-linejoin="round" stroke="#ffcc88" />
+    <LineSymbolizer stroke-linecap="round" stroke-width="3" stroke-linejoin="round" stroke="#ffc088" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>3000000</MaxScaleDenominator>
     <MinScaleDenominator>750000</MinScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
-    <LineSymbolizer stroke-linecap="round" stroke-width="1.5" stroke-linejoin="round" stroke="#ffcc88" />
+    <LineSymbolizer stroke-linecap="round" stroke-width="1.5" stroke-linejoin="round" stroke="#ffc088" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
@@ -745,13 +733,13 @@
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([type] = 'city')</Filter>
-    <TextSymbolizer size="24" wrap-width="180" fontset-name="fontset-1" text-transform="uppercase" character-spacing="2.1" wrap-before="true" fill="#895453" halo-fill="rgba(255, 243, 232, 0.5)" halo-radius="2.5" halo-rasterizer="fast" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="20" wrap-width="180" fontset-name="fontset-1" text-transform="uppercase" character-spacing="2.1" wrap-before="true" fill="#895453" halo-fill="rgba(255, 243, 232, 0.5)" halo-radius="2.5" halo-rasterizer="fast" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
     <MinScaleDenominator>200000</MinScaleDenominator>
     <Filter>([type] = 'city')</Filter>
-    <TextSymbolizer size="18" wrap-width="140" fontset-name="fontset-1" text-transform="uppercase" character-spacing="2.1" wrap-before="true" fill="#895453" halo-fill="rgba(255, 243, 232, 0.5)" halo-radius="2.5" halo-rasterizer="fast" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" wrap-width="140" fontset-name="fontset-1" text-transform="uppercase" character-spacing="2.1" wrap-before="true" fill="#895453" halo-fill="rgba(255, 243, 232, 0.5)" halo-radius="2.5" halo-rasterizer="fast" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>3000000</MaxScaleDenominator>
@@ -859,31 +847,31 @@
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'town')</Filter>
-    <TextSymbolizer size="24" character-spacing="2.1" fontset-name="fontset-2" wrap-width="120" wrap-before="true" fill="#895453" halo-fill="rgba(255, 243, 232, 0.5)" halo-radius="2.5" halo-rasterizer="fast" ><![CDATA['']]></TextSymbolizer>
+    <TextSymbolizer size="22" character-spacing="2.1" fontset-name="fontset-2" wrap-width="120" wrap-before="true" fill="#895453" halo-fill="rgba(255, 243, 232, 0.5)" halo-radius="2.5" halo-rasterizer="fast" ><![CDATA['']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'town')</Filter>
-    <TextSymbolizer size="24" character-spacing="2.1" fontset-name="fontset-2" wrap-width="120" wrap-before="true" fill="#895453" halo-fill="rgba(255, 243, 232, 0.5)" halo-radius="2.5" halo-rasterizer="fast" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="22" character-spacing="2.1" fontset-name="fontset-2" wrap-width="120" wrap-before="true" fill="#895453" halo-fill="rgba(255, 243, 232, 0.5)" halo-radius="2.5" halo-rasterizer="fast" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([type] = 'town')</Filter>
-    <TextSymbolizer size="20" character-spacing="2.1" fontset-name="fontset-2" wrap-width="120" wrap-before="true" fill="#895453" halo-fill="rgba(255, 243, 232, 0.5)" halo-radius="2.5" halo-rasterizer="fast" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="18" character-spacing="2.1" fontset-name="fontset-2" wrap-width="120" wrap-before="true" fill="#895453" halo-fill="rgba(255, 243, 232, 0.5)" halo-radius="2.5" halo-rasterizer="fast" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([type] = 'town')</Filter>
-    <TextSymbolizer size="16" character-spacing="2.1" fontset-name="fontset-2" wrap-width="120" wrap-before="true" fill="#895453" halo-fill="rgba(255, 243, 232, 0.5)" halo-radius="2.5" halo-rasterizer="fast" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="14" character-spacing="2.1" fontset-name="fontset-2" wrap-width="120" wrap-before="true" fill="#895453" halo-fill="rgba(255, 243, 232, 0.5)" halo-radius="2.5" halo-rasterizer="fast" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>3000000</MaxScaleDenominator>
     <MinScaleDenominator>200000</MinScaleDenominator>
     <Filter>([type] = 'town')</Filter>
-    <TextSymbolizer size="12" character-spacing="2.1" fontset-name="fontset-2" wrap-width="120" wrap-before="true" fill="#895453" halo-fill="rgba(255, 243, 232, 0.5)" halo-radius="2.5" halo-rasterizer="fast" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="13" character-spacing="2.1" fontset-name="fontset-2" wrap-width="120" wrap-before="true" fill="#895453" halo-fill="rgba(255, 243, 232, 0.5)" halo-radius="2.5" halo-rasterizer="fast" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>3000000</MaxScaleDenominator>
@@ -896,7 +884,13 @@
 
 <Style name="water_label" filter-mode="first">
   <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([area] &gt; 500000)</Filter>
+    <TextSymbolizer fontset-name="fontset-0" fill="#0092f9" size="12" wrap-width="100" wrap-before="true" halo-fill="rgba(255, 255, 255, 0.25)" halo-radius="1.5" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([area] &gt; 500000)</Filter>
     <TextSymbolizer fontset-name="fontset-0" fill="#0092f9" size="12" wrap-width="100" wrap-before="true" halo-fill="rgba(255, 255, 255, 0.25)" halo-radius="1.5" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
@@ -916,11 +910,11 @@
     <TextSymbolizer fontset-name="fontset-0" fill="#0092f9" size="12" wrap-width="100" wrap-before="true" halo-fill="rgba(255, 255, 255, 0.25)" halo-radius="1.5" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
-    <MinScaleDenominator>50000</MinScaleDenominator>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
     <TextSymbolizer fontset-name="fontset-0" fill="#0092f9" size="12" wrap-width="100" wrap-before="true" halo-fill="rgba(255, 255, 255, 0.25)" halo-radius="1.5" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
-    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
     <TextSymbolizer fontset-name="fontset-0" fill="#0092f9" size="12" wrap-width="100" wrap-before="true" halo-fill="rgba(255, 255, 255, 0.25)" halo-radius="1.5" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
 </Style>
@@ -936,8 +930,8 @@
     <TextSymbolizer dy="8" fontset-name="fontset-0" size="12" fill="#895453" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="1" halo-rasterizer="fast" wrap-width="70" line-spacing="-1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
     <TextSymbolizer dy="8" fontset-name="fontset-0" size="12" fill="#895453" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="1" halo-rasterizer="fast" wrap-width="70" line-spacing="-1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
@@ -948,8 +942,8 @@
     <TextSymbolizer dy="8" fontset-name="fontset-0" size="12" fill="#895453" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="1" halo-rasterizer="fast" wrap-width="70" line-spacing="-1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <MinScaleDenominator>25000</MinScaleDenominator>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
     <TextSymbolizer dy="8" fontset-name="fontset-0" size="12" fill="#895453" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="1" halo-rasterizer="fast" wrap-width="70" line-spacing="-1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
@@ -965,14 +959,14 @@
     <TextSymbolizer dy="8" fontset-name="fontset-0" size="12" fill="#895453" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="1" halo-rasterizer="fast" wrap-width="70" line-spacing="-1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 2)</Filter>
     <TextSymbolizer dy="8" fontset-name="fontset-0" size="12" fill="#895453" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="1" halo-rasterizer="fast" wrap-width="70" line-spacing="-1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <MinScaleDenominator>5000</MinScaleDenominator>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 2)</Filter>
     <TextSymbolizer dy="8" fontset-name="fontset-0" size="12" fill="#895453" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="1" halo-rasterizer="fast" wrap-width="70" line-spacing="-1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
@@ -1010,43 +1004,43 @@
     <TextSymbolizer dy="8" fontset-name="fontset-0" size="12" fill="#895453" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="1" halo-rasterizer="fast" wrap-width="70" line-spacing="-1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <TextSymbolizer dy="8" fontset-name="fontset-0" size="12" fill="#895453" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="1" halo-rasterizer="fast" wrap-width="70" line-spacing="-1" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <TextSymbolizer dy="8" fontset-name="fontset-0" size="12" fill="#895453" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="1" halo-rasterizer="fast" wrap-width="70" line-spacing="-1" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <TextSymbolizer dy="8" fontset-name="fontset-0" size="12" fill="#895453" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="1" halo-rasterizer="fast" wrap-width="70" line-spacing="-1" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <TextSymbolizer dy="8" fontset-name="fontset-0" size="12" fill="#895453" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="1" halo-rasterizer="fast" wrap-width="70" line-spacing="-1" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([scalerank] &lt;= 2) and ([maki] != null)</Filter>
+    <Filter>([scalerank] &lt;= 1) and ([maki] != null)</Filter>
     <TextSymbolizer dy="8" fontset-name="fontset-0" size="12" fill="#895453" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="1" halo-rasterizer="fast" wrap-width="70" line-spacing="-1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([scalerank] &lt;= 2) and ([maki] != null)</Filter>
+    <Filter>([scalerank] &lt;= 1) and ([maki] != null)</Filter>
+    <TextSymbolizer dy="8" fontset-name="fontset-0" size="12" fill="#895453" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="1" halo-rasterizer="fast" wrap-width="70" line-spacing="-1" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([scalerank] &lt;= 1) and ([maki] != null)</Filter>
     <TextSymbolizer dy="8" fontset-name="fontset-0" size="12" fill="#895453" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="1" halo-rasterizer="fast" wrap-width="70" line-spacing="-1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([scalerank] &lt;= 2) and ([maki] != null)</Filter>
+    <Filter>([scalerank] &lt;= 1) and ([maki] != null)</Filter>
+    <TextSymbolizer dy="8" fontset-name="fontset-0" size="12" fill="#895453" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="1" halo-rasterizer="fast" wrap-width="70" line-spacing="-1" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([maki] != null) and ([scalerank] &lt;= 2)</Filter>
+    <TextSymbolizer dy="8" fontset-name="fontset-0" size="12" fill="#895453" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="1" halo-rasterizer="fast" wrap-width="70" line-spacing="-1" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([maki] != null) and ([scalerank] &lt;= 2)</Filter>
+    <TextSymbolizer dy="8" fontset-name="fontset-0" size="12" fill="#895453" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="1" halo-rasterizer="fast" wrap-width="70" line-spacing="-1" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([maki] != null) and ([scalerank] &lt;= 2)</Filter>
     <TextSymbolizer dy="8" fontset-name="fontset-0" size="12" fill="#895453" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="1" halo-rasterizer="fast" wrap-width="70" line-spacing="-1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
@@ -1067,8 +1061,8 @@
     <TextSymbolizer fontset-name="fontset-0" size="12" fill="#895453" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="1" halo-rasterizer="fast" wrap-width="70" line-spacing="-1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <MinScaleDenominator>5000</MinScaleDenominator>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([localrank] &lt;= 2) and ([scalerank] &lt;= 1)</Filter>
     <TextSymbolizer fontset-name="fontset-0" size="12" fill="#895453" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="1" halo-rasterizer="fast" wrap-width="70" line-spacing="-1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
@@ -1079,8 +1073,8 @@
     <TextSymbolizer fontset-name="fontset-0" size="12" fill="#895453" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="1" halo-rasterizer="fast" wrap-width="70" line-spacing="-1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <MinScaleDenominator>25000</MinScaleDenominator>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([localrank] &lt;= 2) and ([scalerank] &lt;= 1)</Filter>
     <TextSymbolizer fontset-name="fontset-0" size="12" fill="#895453" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="1" halo-rasterizer="fast" wrap-width="70" line-spacing="-1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
@@ -1096,14 +1090,14 @@
     <TextSymbolizer fontset-name="fontset-0" size="12" fill="#895453" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="1" halo-rasterizer="fast" wrap-width="70" line-spacing="-1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <MinScaleDenominator>5000</MinScaleDenominator>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([localrank] &lt;= 2) and ([scalerank] &lt;= 2)</Filter>
     <TextSymbolizer fontset-name="fontset-0" size="12" fill="#895453" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="1" halo-rasterizer="fast" wrap-width="70" line-spacing="-1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([localrank] &lt;= 2) and ([scalerank] &lt;= 2)</Filter>
     <TextSymbolizer fontset-name="fontset-0" size="12" fill="#895453" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="1" halo-rasterizer="fast" wrap-width="70" line-spacing="-1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
@@ -1146,8 +1140,8 @@
     <TextSymbolizer dy="8" fontset-name="fontset-0" size="12" fill="#895453" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="1" halo-rasterizer="fast" wrap-width="70" line-spacing="-1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <MinScaleDenominator>5000</MinScaleDenominator>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([scalerank] &lt;= 1)</Filter>
     <TextSymbolizer fontset-name="fontset-0" size="12" fill="#895453" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="1" halo-rasterizer="fast" wrap-width="70" line-spacing="-1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
@@ -1158,8 +1152,8 @@
     <TextSymbolizer fontset-name="fontset-0" size="12" fill="#895453" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="1" halo-rasterizer="fast" wrap-width="70" line-spacing="-1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <MinScaleDenominator>25000</MinScaleDenominator>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([scalerank] &lt;= 1)</Filter>
     <TextSymbolizer fontset-name="fontset-0" size="12" fill="#895453" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="1" halo-rasterizer="fast" wrap-width="70" line-spacing="-1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
@@ -1169,14 +1163,14 @@
     <TextSymbolizer fontset-name="fontset-0" size="12" fill="#895453" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="1" halo-rasterizer="fast" wrap-width="70" line-spacing="-1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <MinScaleDenominator>5000</MinScaleDenominator>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([scalerank] &lt;= 2)</Filter>
     <TextSymbolizer fontset-name="fontset-0" size="12" fill="#895453" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="1" halo-rasterizer="fast" wrap-width="70" line-spacing="-1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([scalerank] &lt;= 2)</Filter>
     <TextSymbolizer fontset-name="fontset-0" size="12" fill="#895453" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="1" halo-rasterizer="fast" wrap-width="70" line-spacing="-1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
@@ -1345,6 +1339,16 @@
     <StyleName>poi_label-label</StyleName>  </Layer>
 
 <Style name="road_label" filter-mode="first">
+  <Rule>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>([class] = 'street')</Filter>
+    <TextSymbolizer size="0" placement="line" fontset-name="fontset-2" fill="#c2837e" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="1" halo-rasterizer="fast" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <Filter>([class] = 'street')</Filter>
+    <TextSymbolizer size="13" placement="line" fontset-name="fontset-2" fill="#c2837e" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="1" halo-rasterizer="fast" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <TextSymbolizer size="13" placement="line" fontset-name="fontset-2" fill="#c2837e" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="1" halo-rasterizer="fast" ><![CDATA[[name]]]></TextSymbolizer>
