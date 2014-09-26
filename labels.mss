@@ -141,10 +141,10 @@
   text-face-name: @sans;
   text-wrap-width: 120;
   text-wrap-before: true;
-  text-fill: @maroon2;
   text-halo-fill: fadeout(@land, 50%);
-  text-halo-radius: 2.5;
+  text-halo-radius: 1.5;
   text-halo-rasterizer: fast;
+  text-fill: @lavanda2;  
   [type='city'][zoom>=8][zoom<=15] {
   	text-face-name: @sans_md;
     text-transform: uppercase;
@@ -170,6 +170,7 @@
   }
   [type='village'] {
     text-size: 12;
+    text-fill: @maroon1;
     [zoom>=12] { text-size: 14; }
     [zoom>=14] { text-size: 18; }
     [zoom>=16] { text-size: 22; }
@@ -190,40 +191,54 @@
 
 // ---------------------------------------------------------------------
 // Points of interest
-
-#poi_label[zoom=14][scalerank<=1],
-#poi_label[zoom=15][scalerank<=2],
-#poi_label[zoom=16][scalerank<=3],
-#poi_label[zoom=17][scalerank<=4][localrank<=2],
-#poi_label[zoom>=18] {
-  // Separate icon and label attachments are created to ensure that
-  // all icon placement happens first, then labels are placed only
-  // if there is still room.
-  ::icon[maki!=null] {
-    // The [maki] field values match a subset of Maki icon names, so we
-    // can use that in our url expression.
-    // Not all POIs have a Maki icon assigned, so we limit this section
-    // to those that do. See also <https://www.mapbox.com/maki/>
-    marker-fill:@maroon2;
-    marker-file:url('icon/[maki]-12.svg');
-  }
-  ::label {
-    text-name: @name;
-    text-face-name: @sans_it;
-    text-size: 12;
-    text-fill: @maroon2;
-    text-halo-fill: fadeout(#fff, 50%);
-    text-halo-radius: 1;
-    text-halo-rasterizer: fast;
-    text-wrap-width: 70;
-    text-line-spacing:	-1;
-    //text-transform: uppercase;
-    //text-character-spacing:	0.25;
-    // POI labels with an icon need to be offset:
-    [maki!=null] { text-dy: 8; }
+#poi_label {
+  
+  [type='Rail Station'],
+  [type='University'],
+  [type='College'],  
+  [type='School'],  
+  [type='Place Of Worship'],
+  [type='Hospital'],
+  [type='Museum'],  
+  [type='Park'],  
+  [type='Police'],   
+  [type='Townhall'],     
+  {
+    
+    [zoom=14][scalerank<=1],
+    [zoom=15][scalerank<=2],
+    [zoom=16][scalerank<=3],
+    [zoom=17][scalerank<=4][localrank<=2],
+    [zoom>=18] {
+      // Separate icon and label attachments are created to ensure that
+      // all icon placement happens first, then labels are placed only
+      // if there is still room.
+      ::icon[maki!=null] {
+        // The [maki] field values match a subset of Maki icon names, so we
+        // can use that in our url expression.
+        // Not all POIs have a Maki icon assigned, so we limit this section
+        // to those that do. See also <https://www.mapbox.com/maki/>
+        marker-fill:@maroon2;
+        marker-file:url('icon/[maki]-12.svg');
+      }
+      ::label {
+        text-name: @name;
+        text-face-name: @sans_it;
+        text-size: 12;
+        text-fill: @maroon1;
+        text-halo-fill: @land;
+        text-halo-radius: 1;
+        text-halo-rasterizer: fast;
+        text-wrap-width: 70;
+        text-line-spacing:	-1;
+        //text-transform: uppercase;
+        //text-character-spacing:	0.25;
+        // POI labels with an icon need to be offset:
+        [maki!=null] { text-dy: 8; }
+      }
+    }
   }
 }
-
 
 // ---------------------------------------------------------------------
 // Roads
@@ -253,11 +268,12 @@
   text-placement: line;  // text follows line path
   text-face-name: @sans;
   text-fill: @maroon1;
-  text-halo-fill: fadeout(#fff, 50%);
+  text-halo-fill: @road_small;
   text-halo-radius: 1;
   text-halo-rasterizer: fast;
   text-size: 12;
   [zoom<15][class='street'] { text-size: 0; }
+  [zoom<16][class='service'], [zoom<16][class='path'] { text-size: 0; }
   [zoom>=15] { text-size: 13; }
 }
 
