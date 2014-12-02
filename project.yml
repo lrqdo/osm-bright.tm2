@@ -11,14 +11,14 @@ bounds:
   - 180
   - 85.0511
 center: 
-  - 2.9993
-  - 48.012
+  - 3.7079
+  - 47.6709
   - 8
 description: ''
 format: "png8:m=h"
 interactivity_layer: ''
 layers: null
-maxzoom: 22
+maxzoom: 20
 minzoom: 0
 name: lrqdo-bright
 source: "mapbox:///mapbox.mapbox-streets-v4"

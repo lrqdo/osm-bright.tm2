@@ -1,3 +1,4 @@
+
 // =====================================================================
 // LABELS
 
@@ -24,46 +25,12 @@
 // as possible. 'Arial Unicode MS Regular' and 'Arial Unicode MS Bold' 
 //are recommended as final fallbacks if you have them available. 
 //They support all the characters used in the MapBox Streets vector tiles.
-@fallback: 'Source Sans Pro Regular';
-@sans: 'Source Sans Pro Regular', @fallback;
-@sans_md: 'Source Sans Pro Semibold', @fallback;
-@sans_bd: 'Source Sans Pro Bold', @fallback;
-@sans_it: 'Source Sans Pro Italic', @fallback;
+@fallback: 'Arial Unicode MS Regular';
+@sans: 'Segoe UI Light', @fallback;
+@sans_md: 'Segoe UI Semilight', @fallback;
+@sans_bd: 'Segoe UI Semibold', @fallback;
+@sans_it: 'Segoe UI Light Italic', @fallback;
 
-
-
-// ---------------------------------------------------------------------
-// Countries
-
-// The country labels in MapBox Streets vector tiles are placed by hand,
-// optimizing the arrangement to fit as many as possible in densely-
-// labeled areas.
-/*#country_label[zoom>=3] {
-  text-name: @name;
-  text-face-name: @sans_bd;
-  text-transform: uppercase;
-  text-wrap-width: 100;
-  text-wrap-before: true;
-  text-fill: #334;
-  text-halo-fill: fadeout(#fff,80%);
-  text-halo-radius: 2;
-  text-halo-rasterizer: fast;
-  text-line-spacing: -4;
-  text-character-spacing: 0.5;
-  text-size: 11;
-  [zoom>=3][scalerank=1],
-  [zoom>=4][scalerank=2],
-  [zoom>=5][scalerank=3],
-  [zoom>=6][scalerank>3] {
-    text-size: 13;
-  }
-  [zoom>=4][scalerank=1],
-  [zoom>=5][scalerank=2],
-  [zoom>=6][scalerank=3],
-  [zoom>=7][scalerank>3] {
-    text-size: 15;
-  }
-}*/
 
 #country_label_line {
   // Lines that connect offset labels to small
@@ -121,7 +88,6 @@
 
 // ---------------------------------------------------------------------
 // Cities, towns, villages, etc
-/*
 // City labels with dots for low zoom levels.
 // The separate attachment keeps the size of the XML down.
 #place_label::citydots[type='city'][zoom>=4][zoom<=7] {
@@ -129,20 +95,21 @@
   // to use shaves a bit off the final project.xml size
   [ldir='N'],[ldir='S'],[ldir='E'],[ldir='W'],
   [ldir='NE'],[ldir='SE'],[ldir='SW'],[ldir='NW'] {
-    marker-width: 6;
-    marker-fill: #333;
+    marker-width: 5;
+    marker-fill: @lavanda2;
     marker-opacity: .5;
+    marker-line-width: 0;
   }
-}*/
+}
 
 #place_label[zoom>=8] {
-  text-character-spacing: 2.1;
+  text-character-spacing: 1.4;
   text-name: @name;
   text-face-name: @sans;
   text-wrap-width: 120;
   text-wrap-before: true;
   text-halo-fill: fadeout(@land, 50%);
-  text-halo-radius: 1.5;
+  text-halo-radius: 1.8;
   text-halo-rasterizer: fast;
   text-fill: @lavanda2;  
   [type='city'][zoom>=8][zoom<=15] {
@@ -182,6 +149,7 @@
     text-face-name:	@sans_bd;
     text-transform: uppercase;
     text-character-spacing: 0.5;
+    [zoom<13] {text-name: "''"; }
     [zoom>=14] { text-size: 11; }
     [zoom>=15] { text-size: 12; text-character-spacing: 1; }
     [zoom>=16] { text-size: 14; text-character-spacing: 2; }
@@ -272,8 +240,8 @@
   text-halo-radius: 1;
   text-halo-rasterizer: fast;
   text-size: 12;
-  [zoom<15][class='street'] { text-size: 0; }
-  [zoom<16][class='service'], [zoom<16][class='path'] { text-size: 0; }
+  [zoom<15][class='street'] { text-name: "''"; }
+  [zoom<16][class='service'], [zoom<16][class='path'] { text-name: "''"; }
   [zoom>=15] { text-size: 13; }
 }
 

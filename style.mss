@@ -39,6 +39,7 @@
 
 Map {
   background-color: @land;
+  font-directory: url("fonts/");
 }
 
 // ---------------------------------------------------------------------
@@ -103,14 +104,11 @@ Map {
 
 #admin[admin_level>=3][zoom>=6] {
   opacity: .3;
-  line-width: .8;
+  line-width: .6;
   line-join: round;
   line-cap: butt;
   line-color: @lavanda2;
-  line-dasharray: 2,2;
-    [zoom<8] {
-      line-dasharray: 0,0;
-    }
+  //line-dasharray: 2,2;
     [zoom>=8] { line-width: 1; }
     [zoom>=12] { line-width: 2; }
 }

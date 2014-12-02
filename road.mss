@@ -22,14 +22,15 @@
       opacity: 1;
       line-join:round;
       line-color: @road_casing;
-      #road { line-cap: round; }
-      #tunnel { line-dasharray:3,2; }
+      //#road { line-cap: round; }
+      #tunnel { opacity:.5; }
       [zoom>=8] { line-width:3; }
       [zoom>=10]  { line-width:7; }
       [zoom>=12] { line-width:11;  }
       [zoom>=14] { line-width:12;  }      
       [zoom>=15] { line-width:14; }
-      [zoom>=16] { line-width:15; }
+      [zoom>=16] { line-width:16; }
+      [zoom>=17] { line-width:20; }      
     }
 
     [class='main'][zoom>=12],
@@ -38,10 +39,10 @@
       line-color:@road_small_casing;
       #road { line-cap: round; }
       #tunnel { line-dasharray:3,2; }
-      [zoom>=14] { line-width:6; }
+      [zoom>=14] { line-width:7; }
       [zoom>=15] { line-width:9; }
-      [zoom>=16] { line-width:11; }
-      [zoom>=17] { line-width:13; }
+      [zoom>=16] { line-width:13; }
+      [zoom>=17] { line-width:16; }
     }
 
   }
@@ -55,23 +56,23 @@
       line-join:round;
       #road, #bridge { line-cap: round; }
       line-color:@road_small;
-      #tunnel { line-color:lighten(@road_small,2); }
+      #tunnel { opacity: .5 }
       [zoom>=10] { line-width:2; }
       [zoom>=12] { line-width:3; }
       [zoom>=14] { line-width:4; }
       [zoom>=15] { line-width:5; }
-      [zoom>=16] { line-width:6; }
-      [zoom>=17] { line-width:8; }
+      [zoom>=16] { line-width:8; }
+      [zoom>=17] { line-width:10; }
     }
-    [class='street'][zoom>=14],
-    [class='street_limited'][zoom>=14],
+    [class='street'][zoom>=15],
+    [class='street_limited'][zoom>=15],
     [class='service'][zoom>=16],
     [class='path'][zoom>=16]{
       line-join:round;
       #road, #bridge { line-cap: round; }
-      [zoom>=14] { line-width:2; line-color:@road_small; }
-      [zoom>=16] { line-width:4; }
-      [zoom>=17] { line-width:5; }
+      [zoom>=14] { line-width:3; line-color:@road_small; }
+      [zoom>=16] { line-width:7; }
+      [zoom>=17] { line-width:8; }
       [class='path'] {
         [zoom>=16] { line-width:3; }
         line-join: bevel;
@@ -106,6 +107,7 @@
       [zoom>=14] { line-width:5; }
       [zoom>=15] { line-width:6; }
       [zoom>=16] { line-width:7; }
+      [zoom>=17] { line-width:10; }
     }
   
   
