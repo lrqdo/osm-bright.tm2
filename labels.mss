@@ -25,12 +25,20 @@
 // as possible. 'Arial Unicode MS Regular' and 'Arial Unicode MS Bold' 
 //are recommended as final fallbacks if you have them available. 
 //They support all the characters used in the MapBox Streets vector tiles.
+
 @fallback: 'Arial Unicode MS Regular';
 @sans: 'Segoe UI Light', @fallback;
 @sans_md: 'Segoe UI Semilight', @fallback;
 @sans_bd: 'Segoe UI Semibold', @fallback;
 @sans_it: 'Segoe UI Light Italic', @fallback;
 
+/*
+@fallback: 'Source Sans Pro Regular';		
+@sans: 'Source Sans Pro Regular', @fallback;		
+@sans_md: 'Source Sans Pro Semibold', @fallback;		
+@sans_bd: 'Source Sans Pro Bold', @fallback;		
+@sans_it: 'Source Sans Pro Italic', @fallback;
+*/
 
 #country_label_line {
   // Lines that connect offset labels to small
