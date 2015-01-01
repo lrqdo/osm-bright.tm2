@@ -113,6 +113,9 @@ Map {
     [zoom>=12] { line-width: 2; }
 }
 
+#landuse [class='cemetery'] {
+  polygon-fill: #F0F;  
+}
 
 // ---------------------------------------------------------------------
 // Water Features 
@@ -139,6 +142,8 @@ Map {
     polygon-clip: false;
   }
 }
+
+
 
 #waterway {
   line-color: @water;
@@ -167,7 +172,7 @@ Map {
   // OpenStreetMap, so this layer includes both. The 'class' field
   // is a highly opinionated simplification of the myriad LULC
   // tag combinations into a limited set of general classes.
-  [class='park'][zoom>=13],[class='cemetery'][zoom>=13] { polygon-fill: @green1; }
+  //[class='park'][zoom>=13],[class='cemetery'][zoom>=13] { polygon-fill: @green1; }
   [class='wood'][zoom>=13] { polygon-fill: mix(@bgLight, @green1, 10%); }
  
   /*
