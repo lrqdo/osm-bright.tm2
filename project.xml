@@ -5,7 +5,7 @@
 <Parameters>
   <Parameter name="attribution"><![CDATA[<a href='https://www.mapbox.com/about/maps/' target='_blank'>&copy; Mapbox &copy; OpenStreetMap</a> <a class='mapbox-improve-map' href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a>]]></Parameter>
   <Parameter name="bounds">-180,-85.0511,180,85.0511</Parameter>
-  <Parameter name="center">2.3812,48.8591,13</Parameter>
+  <Parameter name="center">2.3335,48.856,14</Parameter>
   <Parameter name="format">png8:m=h</Parameter>
   <Parameter name="maxzoom">20</Parameter>
   <Parameter name="minzoom">0</Parameter>
@@ -34,10 +34,6 @@
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([class] = 'wood')</Filter>
     <PolygonSymbolizer fill="#cadbaa" />
-  </Rule>
-  <Rule>
-    <Filter>([class] = 'cemetery')</Filter>
-    <PolygonSymbolizer fill="#ff00ff" />
   </Rule>
 </Style>
 <Layer name="landuse"
@@ -4970,1361 +4966,1361 @@
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'School') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'School') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([type] = 'School') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([type] = 'School') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'School') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'School') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 2)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'School') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 2)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([type] = 'School') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 2)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'School') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 2)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'School') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 3)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'School') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 3)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'School') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 3)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'School') and ([scalerank] &lt;= 4) and ([localrank] &lt;= 2) and ([maki] != null)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'School') and ([scalerank] &lt;= 4) and ([localrank] &lt;= 2) and ([maki] != null)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'Townhall') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'Townhall') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([type] = 'Townhall') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([type] = 'Townhall') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'Townhall') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'Townhall') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 2)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'Townhall') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 2)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([type] = 'Townhall') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 2)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'Townhall') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 2)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'Townhall') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 3)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'Townhall') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 3)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'Townhall') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 3)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'Townhall') and ([scalerank] &lt;= 4) and ([localrank] &lt;= 2) and ([maki] != null)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'Townhall') and ([scalerank] &lt;= 4) and ([localrank] &lt;= 2) and ([maki] != null)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'Police') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'Police') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([type] = 'Police') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([type] = 'Police') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'Police') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'Police') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 2)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'Police') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 2)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([type] = 'Police') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 2)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'Police') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 2)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'Police') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 3)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'Police') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 3)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'Police') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 3)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'Police') and ([scalerank] &lt;= 4) and ([localrank] &lt;= 2) and ([maki] != null)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'Police') and ([scalerank] &lt;= 4) and ([localrank] &lt;= 2) and ([maki] != null)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'Park') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'Park') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([type] = 'Park') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([type] = 'Park') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'Park') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'Park') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 2)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'Park') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 2)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([type] = 'Park') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 2)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'Park') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 2)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'Park') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 3)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'Park') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 3)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'Park') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 3)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'Park') and ([scalerank] &lt;= 4) and ([localrank] &lt;= 2) and ([maki] != null)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'Park') and ([scalerank] &lt;= 4) and ([localrank] &lt;= 2) and ([maki] != null)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'Rail Station') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([type] = 'Rail Station') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([type] = 'Rail Station') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'Rail Station') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'Rail Station') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'Rail Station') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 2)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([type] = 'Rail Station') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 2)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'Rail Station') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 2)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'Rail Station') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 2)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'Rail Station') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 3)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'Rail Station') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 3)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'Rail Station') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 3)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'Rail Station') and ([scalerank] &lt;= 4) and ([localrank] &lt;= 2) and ([maki] != null)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'Rail Station') and ([scalerank] &lt;= 4) and ([localrank] &lt;= 2) and ([maki] != null)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'University') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([type] = 'University') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([type] = 'University') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'University') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'University') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'University') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 2)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([type] = 'University') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 2)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'University') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 2)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'University') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 2)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'University') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 3)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'University') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 3)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'University') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 3)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'University') and ([scalerank] &lt;= 4) and ([localrank] &lt;= 2) and ([maki] != null)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'University') and ([scalerank] &lt;= 4) and ([localrank] &lt;= 2) and ([maki] != null)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'College') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'College') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([type] = 'College') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([type] = 'College') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'College') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'College') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 2)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'College') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 2)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([type] = 'College') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 2)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'College') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 2)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'College') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 3)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'College') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 3)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'College') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 3)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'College') and ([scalerank] &lt;= 4) and ([localrank] &lt;= 2) and ([maki] != null)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'College') and ([scalerank] &lt;= 4) and ([localrank] &lt;= 2) and ([maki] != null)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'Museum') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'Museum') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([type] = 'Museum') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([type] = 'Museum') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'Museum') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'Museum') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 2)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'Museum') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 2)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([type] = 'Museum') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 2)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'Museum') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 2)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'Museum') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 3)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'Museum') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 3)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'Museum') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 3)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'Museum') and ([scalerank] &lt;= 4) and ([localrank] &lt;= 2) and ([maki] != null)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'Museum') and ([scalerank] &lt;= 4) and ([localrank] &lt;= 2) and ([maki] != null)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'Place Of Worship') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'Place Of Worship') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([type] = 'Place Of Worship') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([type] = 'Place Of Worship') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'Place Of Worship') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'Place Of Worship') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 2)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'Place Of Worship') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 2)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([type] = 'Place Of Worship') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 2)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'Place Of Worship') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 2)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'Place Of Worship') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 3)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'Place Of Worship') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 3)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'Place Of Worship') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 3)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'Place Of Worship') and ([scalerank] &lt;= 4) and ([localrank] &lt;= 2) and ([maki] != null)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'Place Of Worship') and ([scalerank] &lt;= 4) and ([localrank] &lt;= 2) and ([maki] != null)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'Hospital') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'Hospital') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([type] = 'Hospital') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([type] = 'Hospital') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'Hospital') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'Hospital') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 2)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'Hospital') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 2)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([type] = 'Hospital') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 2)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'Hospital') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 2)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'Hospital') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 3)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'Hospital') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 3)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'Hospital') and ([localrank] &lt;= 2) and ([maki] != null) and ([scalerank] &lt;= 3)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'Hospital') and ([scalerank] &lt;= 4) and ([localrank] &lt;= 2) and ([maki] != null)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'Hospital') and ([scalerank] &lt;= 4) and ([localrank] &lt;= 2) and ([maki] != null)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'College') and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([type] = 'College') and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([type] = 'College') and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'College') and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'College') and ([maki] != null) and ([scalerank] &lt;= 2)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([type] = 'College') and ([maki] != null) and ([scalerank] &lt;= 2)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'College') and ([maki] != null) and ([scalerank] &lt;= 2)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'College') and ([scalerank] &lt;= 3) and ([maki] != null)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'College') and ([scalerank] &lt;= 3) and ([maki] != null)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'School') and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([type] = 'School') and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([type] = 'School') and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'School') and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'School') and ([maki] != null) and ([scalerank] &lt;= 2)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([type] = 'School') and ([maki] != null) and ([scalerank] &lt;= 2)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'School') and ([maki] != null) and ([scalerank] &lt;= 2)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'School') and ([scalerank] &lt;= 3) and ([maki] != null)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'School') and ([scalerank] &lt;= 3) and ([maki] != null)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'Place Of Worship') and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([type] = 'Place Of Worship') and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([type] = 'Place Of Worship') and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'Place Of Worship') and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'Place Of Worship') and ([maki] != null) and ([scalerank] &lt;= 2)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([type] = 'Place Of Worship') and ([maki] != null) and ([scalerank] &lt;= 2)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'Place Of Worship') and ([maki] != null) and ([scalerank] &lt;= 2)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'Place Of Worship') and ([scalerank] &lt;= 3) and ([maki] != null)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'Place Of Worship') and ([scalerank] &lt;= 3) and ([maki] != null)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'Hospital') and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([type] = 'Hospital') and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([type] = 'Hospital') and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'Hospital') and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'Hospital') and ([maki] != null) and ([scalerank] &lt;= 2)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([type] = 'Hospital') and ([maki] != null) and ([scalerank] &lt;= 2)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'Hospital') and ([maki] != null) and ([scalerank] &lt;= 2)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'Hospital') and ([scalerank] &lt;= 3) and ([maki] != null)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'Hospital') and ([scalerank] &lt;= 3) and ([maki] != null)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'Museum') and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([type] = 'Museum') and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([type] = 'Museum') and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'Museum') and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'Museum') and ([maki] != null) and ([scalerank] &lt;= 2)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([type] = 'Museum') and ([maki] != null) and ([scalerank] &lt;= 2)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'Museum') and ([maki] != null) and ([scalerank] &lt;= 2)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'Museum') and ([scalerank] &lt;= 3) and ([maki] != null)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'Museum') and ([scalerank] &lt;= 3) and ([maki] != null)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'Park') and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([type] = 'Park') and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([type] = 'Park') and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'Park') and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'Park') and ([maki] != null) and ([scalerank] &lt;= 2)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([type] = 'Park') and ([maki] != null) and ([scalerank] &lt;= 2)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'Park') and ([maki] != null) and ([scalerank] &lt;= 2)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'Park') and ([scalerank] &lt;= 3) and ([maki] != null)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'Park') and ([scalerank] &lt;= 3) and ([maki] != null)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'Police') and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([type] = 'Police') and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([type] = 'Police') and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'Police') and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'Police') and ([maki] != null) and ([scalerank] &lt;= 2)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([type] = 'Police') and ([maki] != null) and ([scalerank] &lt;= 2)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'Police') and ([maki] != null) and ([scalerank] &lt;= 2)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'Police') and ([scalerank] &lt;= 3) and ([maki] != null)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'Police') and ([scalerank] &lt;= 3) and ([maki] != null)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'Townhall') and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([type] = 'Townhall') and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([type] = 'Townhall') and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'Townhall') and ([maki] != null) and ([scalerank] &lt;= 1)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'Townhall') and ([maki] != null) and ([scalerank] &lt;= 2)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([type] = 'Townhall') and ([maki] != null) and ([scalerank] &lt;= 2)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'Townhall') and ([maki] != null) and ([scalerank] &lt;= 2)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'Townhall') and ([scalerank] &lt;= 3) and ([maki] != null)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'Townhall') and ([scalerank] &lt;= 3) and ([maki] != null)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([type] = 'Rail Station') and ([scalerank] &lt;= 1) and ([maki] != null)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([type] = 'Rail Station') and ([scalerank] &lt;= 1) and ([maki] != null)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'Rail Station') and ([scalerank] &lt;= 1) and ([maki] != null)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'Rail Station') and ([scalerank] &lt;= 1) and ([maki] != null)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([type] = 'University') and ([scalerank] &lt;= 1) and ([maki] != null)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([type] = 'University') and ([scalerank] &lt;= 1) and ([maki] != null)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'University') and ([scalerank] &lt;= 1) and ([maki] != null)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'University') and ([scalerank] &lt;= 1) and ([maki] != null)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([type] = 'Rail Station') and ([scalerank] &lt;= 2) and ([maki] != null)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'Rail Station') and ([scalerank] &lt;= 2) and ([maki] != null)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'Rail Station') and ([scalerank] &lt;= 2) and ([maki] != null)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([type] = 'University') and ([scalerank] &lt;= 2) and ([maki] != null)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'University') and ([scalerank] &lt;= 2) and ([maki] != null)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'University') and ([scalerank] &lt;= 2) and ([maki] != null)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'Rail Station') and ([scalerank] &lt;= 3) and ([maki] != null)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'Rail Station') and ([scalerank] &lt;= 3) and ([maki] != null)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'University') and ([scalerank] &lt;= 3) and ([maki] != null)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'University') and ([scalerank] &lt;= 3) and ([maki] != null)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'Townhall') and ([maki] != null)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'Museum') and ([maki] != null)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'Hospital') and ([maki] != null)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'Place Of Worship') and ([maki] != null)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'School') and ([maki] != null)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'College') and ([maki] != null)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'University') and ([maki] != null)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'Rail Station') and ([maki] != null)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'Police') and ([maki] != null)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'Park') and ([maki] != null)</Filter>
-    <MarkersSymbolizer fill="#895453" file="icon/[maki]-12.svg" />
+    <PointSymbolizer file="icon/[maki]-12.svg" comp-op="hard-light" />
   </Rule>
 </Style>
 <Layer name="poi_label"

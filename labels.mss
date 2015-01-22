@@ -194,8 +194,9 @@
         // can use that in our url expression.
         // Not all POIs have a Maki icon assigned, so we limit this section
         // to those that do. See also <https://www.mapbox.com/maki/>
-        marker-fill:@maroon2;
-        marker-file:url('icon/[maki]-12.svg');
+        //point-fill:@maroon2;
+        point-file:url('icon/[maki]-12.svg');
+        point-comp-op: hard-light;
       }
       ::label {
         text-name: @name;

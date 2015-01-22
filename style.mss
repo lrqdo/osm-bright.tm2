@@ -113,10 +113,6 @@ Map {
     [zoom>=12] { line-width: 2; }
 }
 
-#landuse [class='cemetery'] {
-  polygon-fill: #F0F;  
-}
-
 // ---------------------------------------------------------------------
 // Water Features 
 
